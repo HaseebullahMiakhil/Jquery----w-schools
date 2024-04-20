@@ -1,0 +1,61 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+
+  //this is jquery syntax for event handaling
+  //click
+  $("p").click(function(){
+  // action goes here!!
+
+  //double click
+  $("p").dblclick(function(){
+  $(this).hide();
+});
+
+//mouseenter
+$("#p1").mouseenter(function(){
+  alert("You entered p1!");
+});
+
+//mouseleave
+$("#p1").mouseleave(function(){
+  alert("Bye! You now leave p1!");
+});
+
+//mouse down
+$("#p1").mousedown(function(){
+  alert("Mouse down over p1!");
+});
+
+//mouseup
+$("#p1").mouseup(function(){
+  alert("Mouse up over p1!");
+});
+
+//hover
+$("#p1").hover(function(){
+  alert("You entered p1!");
+},
+function(){
+  alert("Bye! You now leave p1!");
+});
+
+//focus
+$("input").focus(function(){
+  $(this).css("background-color", "#cccccc");
+});
+
+//blur
+$("input").blur(function(){
+  $(this).css("background-color", "#ffffff");
+});
+
+//on method
+$("p").on("click", function(){
+  $(this).hide();
+});
+
+
+
+});
+
+</script>
